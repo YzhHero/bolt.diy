@@ -13,21 +13,23 @@ import OpenAIProvider from './providers/openai';
 import PerplexityProvider from './providers/perplexity';
 import TogetherProvider from './providers/together';
 import XAIProvider from './providers/xai';
+import JarvisProvider from './providers/jarvis';
 
 export {
-  AnthropicProvider,
-  CohereProvider,
-  DeepseekProvider,
-  GoogleProvider,
-  GroqProvider,
-  HuggingFaceProvider,
-  MistralProvider,
-  OllamaProvider,
-  OpenAIProvider,
-  OpenRouterProvider,
-  OpenAILikeProvider,
-  PerplexityProvider,
-  XAIProvider,
-  TogetherProvider,
-  LMStudioProvider,
+  // AnthropicProvider,
+  // CohereProvider,
+  // DeepseekProvider,
+  // GoogleProvider,
+  // GroqProvider,
+  // HuggingFaceProvider,
+  // MistralProvider,
+  // OllamaProvider,
+  // OpenAIProvider,
+  // OpenRouterProvider,
+  // OpenAILikeProvider,
+  // PerplexityProvider,
+  // XAIProvider,
+  // TogetherProvider,
+  // LMStudioProvider,
+  JarvisProvider,
 };
