@@ -9,6 +9,8 @@ export default class OpenAIProvider extends BaseProvider {
   getApiKeyLink = 'https://platform.openai.com/api-keys';
 
   config = {
+    baseUrlKey: 'JARVIS_BASE_URL',
+    apiTokenKey:'JARVIS_API_KEY',
   };
 
   staticModels: ModelInfo[] = [
@@ -29,8 +31,8 @@ export default class OpenAIProvider extends BaseProvider {
       apiKeys,
       providerSettings: providerSettings?.[this.name],
       serverEnv: serverEnv as any,
-      defaultBaseUrlKey: 'JARVIS_BASE_URL',
-      defaultApiTokenKey: 'JARVIS_API_KEY',
+      defaultBaseUrlKey: this.config.baseUrlKey,
+      defaultApiTokenKey: this.config.apiTokenKey,
     });
 
     if (!apiKey) {
